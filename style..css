@@ -197,25 +197,20 @@ main .card-box p {
     }
 }
 
-main .quote-section {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 main .quote-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     height: 300px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
     margin: 50px 20px;
-
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 main .quote-text {
@@ -230,7 +225,6 @@ main .quote-author{
 }
 
 footer {
-    /* border: 2px solid red; */
     height: auto;
     background-color: #111;
     color: var(--text-color);
@@ -245,6 +239,11 @@ footer p {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 540px) {
+    footer {
+        margin: 150px 20px;
+    }
+}
 
 /* DARK SCROLLBAR STYLING */
 ::-webkit-scrollbar {
